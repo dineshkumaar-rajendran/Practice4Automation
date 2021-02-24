@@ -1,60 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="4" failed="2" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-21T08:15:44Z" name="Suite" finished-at="2021-02-21T08:16:34Z" duration-ms="49548">
+  <suite started-at="2021-02-24T05:49:21Z" name="Suite" finished-at="2021-02-24T05:49:22Z" duration-ms="367">
     <groups>
     </groups>
-    <test started-at="2021-02-21T08:15:44Z" name="Test" finished-at="2021-02-21T08:16:34Z" duration-ms="49548">
-      <class name="com.DineshCompany.app.HomePageTest">
-        <test-method is-config="true" signature="setup_browser()[pri:0, instance:com.DineshCompany.app.HomePageTest@623a8092]" started-at="2021-02-21T08:15:53Z" name="setup_browser" finished-at="2021-02-21T08:16:00Z" duration-ms="7073" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup_browser -->
-        <test-method is-config="true" signature="setup_browser()[pri:0, instance:com.DineshCompany.app.HomePageTest@623a8092]" started-at="2021-02-21T08:15:56Z" name="setup_browser" finished-at="2021-02-21T08:16:02Z" duration-ms="5934" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup_browser -->
-        <test-method signature="GetTheTitle()[pri:0, instance:com.DineshCompany.app.HomePageTest@623a8092]" started-at="2021-02-21T08:16:00Z" name="GetTheTitle" finished-at="2021-02-21T08:16:00Z" duration-ms="12" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GetTheTitle -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.DineshCompany.app.HomePageTest@623a8092]" started-at="2021-02-21T08:16:00Z" name="TearDown" finished-at="2021-02-21T08:16:01Z" duration-ms="717" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-        <test-method signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.DineshCompany.app.HomePageTest@623a8092]" started-at="2021-02-21T08:16:02Z" name="login" data-provider="DataProvider" finished-at="2021-02-21T08:16:04Z" duration-ms="1777" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mngr309843]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[jEsEvYv]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
+    <test started-at="2021-02-24T05:49:21Z" name="Test" finished-at="2021-02-24T05:49:22Z" duration-ms="367">
+      <class name="com.qa.testcases.LoginPage_Test_Orange">
+        <test-method is-config="true" signature="setup_browser()[pri:0, instance:com.qa.testcases.LoginPage_Test_Orange@7a675056]" started-at="2021-02-24T05:49:21Z" name="setup_browser" finished-at="2021-02-24T05:49:21Z" duration-ms="298" status="FAIL">
+          <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[expected [Dashboard ‹ Wordpress Demo Site at Demo.Center — WordPress] but found [Log In ‹ Wordpress Demo Site at Demo.Center — WordPress]]]>
+              <![CDATA[The driver executable does not exist: C:\Users\Dines\EcliWrkSp\Practice4Automatoin\.src\test\resources\drivers\chromedriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Dashboard ‹ Wordpress Demo Site at Demo.Center — WordPress] but found [Log In ‹ Wordpress Demo Site at Demo.Center — WordPress]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at com.DineshCompany.app.HomePageTest.login(HomePageTest.java:29)
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Dines\EcliWrkSp\Practice4Automatoin\.src\test\resources\drivers\chromedriver.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at com.org.dinesh.driverfactory.driverFactory.init_driver(driverFactory.java:23)
+at com.BaseTest.app.BaseTest.setup_browser(BaseTest.java:17)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -64,74 +42,36 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:832)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.DineshCompany.app.HomePageTest@623a8092]" started-at="2021-02-21T08:16:04Z" name="TearDown" finished-at="2021-02-21T08:16:05Z" duration-ms="866" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="setup_browser()[pri:0, instance:com.DineshCompany.app.HomePageTest@623a8092]" started-at="2021-02-21T08:16:05Z" name="setup_browser" finished-at="2021-02-21T08:16:12Z" duration-ms="7065" status="PASS">
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup_browser -->
-        <test-method signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.DineshCompany.app.HomePageTest@623a8092]" started-at="2021-02-21T08:16:12Z" name="login" data-provider="DataProvider" finished-at="2021-02-21T08:16:20Z" duration-ms="7907" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[demo123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.DineshCompany.app.HomePageTest@623a8092]" started-at="2021-02-21T08:16:20Z" name="TearDown" finished-at="2021-02-21T08:16:21Z" duration-ms="1219" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="setup_browser()[pri:0, instance:com.DineshCompany.app.HomePageTest@623a8092]" started-at="2021-02-21T08:16:21Z" name="setup_browser" finished-at="2021-02-21T08:16:30Z" duration-ms="8588" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup_browser -->
-        <test-method signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.DineshCompany.app.HomePageTest@623a8092]" started-at="2021-02-21T08:16:30Z" name="login" data-provider="DataProvider" finished-at="2021-02-21T08:16:33Z" duration-ms="3156" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
+        <test-method signature="loginandlogoutTest()[pri:0, instance:com.qa.testcases.LoginPage_Test_Orange@7a675056]" started-at="2021-02-24T05:49:21Z" name="loginandlogoutTest" finished-at="2021-02-24T05:49:21Z" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[expected [Dashboard ‹ Wordpress Demo Site at Demo.Center — WordPress] but found [Log In ‹ Wordpress Demo Site at Demo.Center — WordPress]]]>
+              <![CDATA[The driver executable does not exist: C:\Users\Dines\EcliWrkSp\Practice4Automatoin\.src\test\resources\drivers\chromedriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Dashboard ‹ Wordpress Demo Site at Demo.Center — WordPress] but found [Log In ‹ Wordpress Demo Site at Demo.Center — WordPress]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at com.DineshCompany.app.HomePageTest.login(HomePageTest.java:29)
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Dines\EcliWrkSp\Practice4Automatoin\.src\test\resources\drivers\chromedriver.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at com.org.dinesh.driverfactory.driverFactory.init_driver(driverFactory.java:23)
+at com.BaseTest.app.BaseTest.setup_browser(BaseTest.java:17)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -141,41 +81,15 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:832)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.DineshCompany.app.HomePageTest@623a8092]" started-at="2021-02-21T08:16:33Z" name="TearDown" finished-at="2021-02-21T08:16:34Z" duration-ms="786" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- com.DineshCompany.app.HomePageTest -->
-      <class name="com.DineshCompany.app.LoginPageTest">
-        <test-method is-config="true" signature="setup_browser()[pri:0, instance:com.DineshCompany.app.LoginPageTest@548e6d58]" started-at="2021-02-21T08:15:44Z" name="setup_browser" finished-at="2021-02-21T08:15:52Z" duration-ms="8273" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup_browser -->
-        <test-method is-config="true" signature="setup_browser()[pri:0, instance:com.DineshCompany.app.LoginPageTest@548e6d58]" started-at="2021-02-21T08:15:44Z" name="setup_browser" finished-at="2021-02-21T08:15:52Z" duration-ms="7891" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup_browser -->
-        <test-method signature="verifyLogo()[pri:0, instance:com.DineshCompany.app.LoginPageTest@548e6d58]" started-at="2021-02-21T08:15:52Z" name="verifyLogo" finished-at="2021-02-21T08:15:52Z" duration-ms="147" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogo -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.DineshCompany.app.LoginPageTest@548e6d58]" started-at="2021-02-21T08:15:52Z" name="TearDown" finished-at="2021-02-21T08:15:53Z" duration-ms="832" status="PASS">
+        </test-method> <!-- loginandlogoutTest -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.testcases.LoginPage_Test_Orange@7a675056]" started-at="2021-02-24T05:49:22Z" name="TearDown" finished-at="2021-02-24T05:49:22Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method signature="verifyForgot()[pri:0, instance:com.DineshCompany.app.LoginPageTest@548e6d58]" started-at="2021-02-21T08:15:52Z" name="verifyForgot" finished-at="2021-02-21T08:15:54Z" duration-ms="1797" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyForgot -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.DineshCompany.app.LoginPageTest@548e6d58]" started-at="2021-02-21T08:15:54Z" name="TearDown" finished-at="2021-02-21T08:15:56Z" duration-ms="2085" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- com.DineshCompany.app.LoginPageTest -->
+      </class> <!-- com.qa.testcases.LoginPage_Test_Orange -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -23,7 +23,7 @@ public final class configreader {
 			prop.load(fis);
 			
 			for(Map.Entry<Object, Object> entry : prop.entrySet()) {
-				ConfigMap.put(String.valueOf(entry.getKey()), String.valueOf(entry.getValue()));
+				ConfigMap.put(String.valueOf(entry.getKey()), String.valueOf(entry.getValue()).trim());
 				System.out.println(ConfigMap);
 			}
 

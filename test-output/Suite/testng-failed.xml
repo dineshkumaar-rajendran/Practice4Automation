@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="methods" name="Test(failed)">
+<suite thread-count="2" parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="methods" name="Test(failed)">
     <classes>
-      <class name="com.DineshCompany.app.HomePageTest">
+      <class name="com.qa.testcases.LoginPage_Test_Orange">
         <methods>
           <include name="setup_browser"/>
           <include name="TearDown"/>
-          <include name="login" invocation-numbers="0 2"/>
+          <include name="loginandlogoutTest"/>
         </methods>
-      </class> <!-- com.DineshCompany.app.HomePageTest -->
+      </class> <!-- com.qa.testcases.LoginPage_Test_Orange -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
