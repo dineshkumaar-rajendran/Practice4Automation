@@ -3,7 +3,7 @@
 <suite thread-count="2" parallel="methods" name="Suite">
   <test name="Test">
     <classes>
-      <class name="com.qa.testcases.LoginPage_Test_Orange"/>
+      <class name="com.qa.testcases.LoginPageTestOrange"/>
       <!--<class name="com.qa.testcases.HomePageTest"/>
       <class name="com.qa.testcases.LoginPageTest"/>  -->
     </classes>

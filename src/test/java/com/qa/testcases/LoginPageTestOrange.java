@@ -1,22 +1,23 @@
 package com.qa.testcases;
 
+import org.assertj.core.api.Assertions;
 import org.testng.annotations.Test;
 
-import com.BaseTest.app.*;
-import com.qa.pages.LoginPage_Orange;
+import com.BaseTest.app.BaseTest;
+import com.qa.pages.LoginPageOrange;
 
-public final class LoginPage_Test_Orange extends BaseTest {
+public final class LoginPageTestOrange extends BaseTest {
 
-	private LoginPage_Test_Orange() {
-		
+	private LoginPageTestOrange() {
+
 	}
-	
+
 	@Test
-	public void loginandlogoutTest() {
-		LoginPage_Orange loginpage = new LoginPage_Orange();
-		loginpage.EnterUsername("Admin");
-		loginpage.EnterPassword("admin123");
-		loginpage.loginbtn();
+	public void loginandlogoutTest() throws InterruptedException {
+		String title = new LoginPageOrange().EnterUsername("Admin").EnterPassword("admin123").loginbtn()
+				.ClickWelcomebtn().logoutBtn().getTitle();
+		Assertions.assertThat(title).isEqualTo("OrangeHRM");
+
 	}
-	
+
 }
