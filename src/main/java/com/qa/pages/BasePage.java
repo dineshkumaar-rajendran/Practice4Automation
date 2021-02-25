@@ -1,46 +1,28 @@
 package com.qa.pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.WebElement;
 
-import com.org.dinesh.constants.FrameworkConstants;
+import com.enumer.qa.WaitStrategy;
 import com.org.dinesh.driverfactory.ThreadLocalDriver;
+import com.org.dinesh.driverfactory.WaitFactory;
 
 public class BasePage {
 
-	protected static void click(By by, String WaitStrategy) {
+	protected static void click(By by, WaitStrategy waitStrategy) {
 
-		if (WaitStrategy.equalsIgnoreCase("clickable")) {
-			explicitlyWaitForelementToBeClickable(by);
-		} else if (WaitStrategy.equalsIgnoreCase("present")) {
-			explicitlyWaitForelementToBePresent(by);
-		}
-
-		ThreadLocalDriver.getDriver().findElement(by).click();
+		WebElement element = WaitFactory.explicitWait(by, waitStrategy);
+		element.click();
 	}
 
-	protected static void Sendkey(By by, String value, String WaitStrategy) {
+	protected static void Sendkey(By by, String value, WaitStrategy waitStrategy) {
 
-		if (WaitStrategy.equalsIgnoreCase("clickable")) {
-			explicitlyWaitForelementToBeClickable(by);
-		} else if (WaitStrategy.equalsIgnoreCase("present")) {
-			explicitlyWaitForelementToBePresent(by);
-		}
-		ThreadLocalDriver.getDriver().findElement(by).sendKeys(value);
+		WebElement element = WaitFactory.explicitWait(by, waitStrategy);
+		element.sendKeys(value);
 	}
 
 	protected String getTitle() {
 		return ThreadLocalDriver.getDriver().getTitle();
 	}
 
-	private static void explicitlyWaitForelementToBeClickable(By by) {
-		new WebDriverWait(ThreadLocalDriver.getDriver(), FrameworkConstants.getExwaittime())
-				.until(ExpectedConditions.elementToBeClickable(by));
-	}
-
-	private static void explicitlyWaitForelementToBePresent(By by) {
-		new WebDriverWait(ThreadLocalDriver.getDriver(), FrameworkConstants.getExwaittime())
-				.until(ExpectedConditions.presenceOfElementLocated(by));
-	}
 }

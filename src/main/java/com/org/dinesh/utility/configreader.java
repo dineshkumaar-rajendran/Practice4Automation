@@ -6,6 +6,7 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Properties;
 
+import com.enumer.qa.ConfigProperties;
 import com.org.dinesh.constants.FrameworkConstants;
 
 public final class configreader {
@@ -15,14 +16,14 @@ public final class configreader {
 	}
 
 	private static Properties prop = new Properties();
-	private static final Map<String,String> ConfigMap = new HashMap<>();
+	private static final Map<String, String> ConfigMap = new HashMap<>();
 
 	static {
 		try {
 			FileInputStream fis = new FileInputStream(FrameworkConstants.getConfigFilePath());
 			prop.load(fis);
-			
-			for(Map.Entry<Object, Object> entry : prop.entrySet()) {
+
+			for (Map.Entry<Object, Object> entry : prop.entrySet()) {
 				ConfigMap.put(String.valueOf(entry.getKey()), String.valueOf(entry.getValue()).trim());
 				System.out.println(ConfigMap);
 			}
@@ -32,16 +33,15 @@ public final class configreader {
 		}
 	}
 
-	public static String getValue(String key) throws Exception {
+	public static String get(String key) throws Exception {
 		if (Objects.isNull(key) || Objects.isNull(ConfigMap.get(key))) {
-			throw new Exception("Property name" + key + "is not found please check config.properties");
+			throw new Exception("Property name " + key + " is not found please check config.properties");
 		}
-		System.out.println(ConfigMap.get(key));
+
 		return ConfigMap.get(key);
 
 	}
-	
-	
+
 	/*
 	 * public static String getValue(String key) throws Exception { if
 	 * (Objects.isNull(prop.getProperty(key)) || Objects.isNull(key)) { throw new
