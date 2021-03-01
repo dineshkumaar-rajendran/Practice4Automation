@@ -1,14 +1,12 @@
 package com.qa.testcases;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.BaseTest.app.BaseTest;
 import com.org.dinesh.driverfactory.ThreadLocalDriver;
-import com.org.dinesh.driverfactory.driverFactory;
 
 public final class HomePageTest extends BaseTest{
 

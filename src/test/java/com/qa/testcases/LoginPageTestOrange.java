@@ -1,10 +1,14 @@
 package com.qa.testcases;
 
+import static org.testng.Assert.assertEquals;
+
 import org.assertj.core.api.Assertions;
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.BaseTest.app.BaseTest;
+import com.qa.pages.HomePage_Orange;
 import com.qa.pages.LoginPageOrange;
 
 public final class LoginPageTestOrange extends BaseTest {
@@ -13,21 +17,26 @@ public final class LoginPageTestOrange extends BaseTest {
 
 	}
 
-	@Test(dataProvider = "Multiple login" )
-	public void loginandlogoutTest(String username , String password) throws InterruptedException {
-		String title = new LoginPageOrange().EnterUsername(username).EnterPassword(password).loginbtn()
-				.ClickWelcomebtn().logoutBtn().getTitle();
-		Assertions.assertThat(title).isEqualTo("OrangeHRM");
+	HomePage_Orange HPO;
 
+	@Test()
+	public void LoginLogoutTest(String username, String password) throws InterruptedException {
+
+		LoginPageOrange LPO = new LoginPageOrange();
+		LPO.EnterUsername(username);
+		LPO.EnterPassword(password);
+		HPO = LPO.loginbtn();
+		String originalTitle = HPO.ValidateUserTitle();
+		String[] splitString = originalTitle.split(" ");
+		System.out.println(splitString[0]);
+		String expectedTitle = "Welcome";
+		HPO.ClickWelcomebtn();
+		HPO.logoutBtn();
+		Assert.assertEquals(splitString[0],expectedTitle);
 	}
-	
-	
-	@DataProvider(name="Multiple login",parallel = true)
-	public Object[][] getData(){
-		return new Object[][] {
-			{"Admin","admin123"},
-			{"Admin","admin123"},
-			{"Admin","admin123"}
-		};
+
+	@DataProvider(name = "Multiple login", parallel = true)
+	public Object[][] getData() {
+		return new Object[][] { { "Admins", "admin123" }, { "Admin", "admin123" }, { "Admin", "admin123" } };
 	}
 }

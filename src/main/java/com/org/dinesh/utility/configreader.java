@@ -33,12 +33,12 @@ public final class configreader {
 		}
 	}
 
-	public static String get(String key) throws Exception {
-		if (Objects.isNull(key) || Objects.isNull(ConfigMap.get(key))) {
+	public static String get(ConfigProperties key) throws Exception {
+		if (Objects.isNull(key) || Objects.isNull(ConfigMap.get(key.name().toLowerCase()))) {
 			throw new Exception("Property name " + key + " is not found please check config.properties");
 		}
 
-		return ConfigMap.get(key);
+		return ConfigMap.get(key.name().toLowerCase());
 
 	}
 

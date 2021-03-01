@@ -4,6 +4,7 @@ import java.util.Objects;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import com.enumer.qa.ConfigProperties;
 import com.org.dinesh.utility.configreader;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -20,7 +21,7 @@ public final class driverFactory {
 			WebDriverManager.chromedriver().setup();
 			ThreadLocalDriver.setDriver(new ChromeDriver());
 			ThreadLocalDriver.getDriver().manage().window().maximize();
-			ThreadLocalDriver.getDriver().get(configreader.get("url"));
+			ThreadLocalDriver.getDriver().get(configreader.get(ConfigProperties.URL));
 		}
 	}
 

@@ -8,10 +8,9 @@ import com.org.dinesh.driverfactory.driverFactory;
 public class BaseTest {
 
 	protected BaseTest() {
-		// TODO Auto-generated constructor stub
+
 	}
 
-	
 	@BeforeMethod
 	protected void setup_browser() throws Exception {
 		driverFactory.init_driver();
