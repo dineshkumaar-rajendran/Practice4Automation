@@ -1,41 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="2" ignored="0" total="5" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-01T10:15:33 IST" name="Suite" finished-at="2021-03-01T10:18:48 IST" duration-ms="195479">
+  <suite started-at="2021-03-02T09:44:12 IST" name="Suite" finished-at="2021-03-02T09:44:59 IST" duration-ms="47184">
     <groups>
     </groups>
-    <test started-at="2021-03-01T10:15:33 IST" name="Test" finished-at="2021-03-01T10:18:48 IST" duration-ms="195479">
+    <test started-at="2021-03-02T09:44:12 IST" name="Test" finished-at="2021-03-02T09:44:59 IST" duration-ms="47184">
       <class name="com.qa.testcases.LoginPageTestOrange">
-        <test-method is-config="true" signature="setup_browser()[pri:0, instance:com.qa.testcases.LoginPageTestOrange@2f8dad04]" started-at="2021-03-01T10:15:33 IST" name="setup_browser" finished-at="2021-03-01T10:16:08 IST" duration-ms="35502" status="PASS">
+        <test-method is-config="true" signature="setup_browser()[pri:0, instance:com.qa.testcases.LoginPageTestOrange@2f8dad04]" started-at="2021-03-02T09:44:12 IST" name="setup_browser" finished-at="2021-03-02T09:44:39 IST" duration-ms="27643" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup_browser -->
-        <test-method is-config="true" signature="setup_browser()[pri:0, instance:com.qa.testcases.LoginPageTestOrange@2f8dad04]" started-at="2021-03-01T10:15:33 IST" name="setup_browser" finished-at="2021-03-01T10:16:19 IST" duration-ms="45963" status="PASS">
+        <test-method is-config="true" signature="setup_browser()[pri:0, instance:com.qa.testcases.LoginPageTestOrange@2f8dad04]" started-at="2021-03-02T09:44:12 IST" name="setup_browser" finished-at="2021-03-02T09:44:37 IST" duration-ms="25442" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup_browser -->
-        <test-method is-config="true" signature="setup_browser()[pri:0, instance:com.qa.testcases.LoginPageTestOrange@2f8dad04]" started-at="2021-03-01T10:15:33 IST" name="setup_browser" finished-at="2021-03-01T10:16:16 IST" duration-ms="43081" status="PASS">
+        <test-method is-config="true" signature="setup_browser()[pri:0, instance:com.qa.testcases.LoginPageTestOrange@2f8dad04]" started-at="2021-03-02T09:44:12 IST" name="setup_browser" finished-at="2021-03-02T09:44:34 IST" duration-ms="22256" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup_browser -->
-        <test-method signature="LoginLogoutTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testcases.LoginPageTestOrange@2f8dad04]" started-at="2021-03-01T10:16:08 IST" name="LoginLogoutTest" finished-at="2021-03-01T10:16:30 IST" duration-ms="22011" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginLogoutTest -->
-        <test-method retried="true" signature="LoginLogoutTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testcases.LoginPageTestOrange@2f8dad04]" started-at="2021-03-01T10:16:16 IST" name="LoginLogoutTest" finished-at="2021-03-01T10:16:41 IST" duration-ms="24922" status="SKIP">
+        <test-method signature="LoginLogoutTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testcases.LoginPageTestOrange@2f8dad04]" started-at="2021-03-02T09:44:34 IST" name="LoginLogoutTest" finished-at="2021-03-02T09:44:57 IST" duration-ms="23326" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -76,13 +60,13 @@ at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecuto
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 at java.base/java.lang.Thread.run(Thread.java:832)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#welcome"}
-  (Session info: chrome=88.0.4324.190)
+  (Session info: MicrosoftEdge=88.0.705.81)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DINESH', ip: '192.168.8.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Dines\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63597}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1d6512df80e1c809a1298f3f73c9b6f3
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 88.0.705.81, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:49435}, msedge: {msedgedriverVersion: 88.0.705.81 (324d415ccf2f0d..., userDataDir: C:\Users\Dines\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5948f93bbdacdc55e15895a7ac3c7524
 *** Element info: {Using=id, value=welcome}
 at jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -108,7 +92,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginLogoutTest -->
-        <test-method signature="LoginLogoutTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testcases.LoginPageTestOrange@2f8dad04]" started-at="2021-03-01T10:16:19 IST" name="LoginLogoutTest" finished-at="2021-03-01T10:17:19 IST" duration-ms="60231" status="PASS">
+        <test-method signature="LoginLogoutTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testcases.LoginPageTestOrange@2f8dad04]" started-at="2021-03-02T09:44:37 IST" name="LoginLogoutTest" finished-at="2021-03-02T09:44:49 IST" duration-ms="11644" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -124,23 +108,11 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginLogoutTest -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.testcases.LoginPageTestOrange@2f8dad04]" started-at="2021-03-01T10:16:30 IST" name="TearDown" finished-at="2021-03-01T10:16:33 IST" duration-ms="2229" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.testcases.LoginPageTestOrange@2f8dad04]" started-at="2021-03-01T10:16:41 IST" name="TearDown" finished-at="2021-03-01T10:16:46 IST" duration-ms="5297" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="setup_browser()[pri:0, instance:com.qa.testcases.LoginPageTestOrange@2f8dad04]" started-at="2021-03-01T10:16:46 IST" name="setup_browser" finished-at="2021-03-01T10:17:16 IST" duration-ms="29506" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup_browser -->
-        <test-method retried="true" signature="LoginLogoutTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testcases.LoginPageTestOrange@2f8dad04]" started-at="2021-03-01T10:17:16 IST" name="LoginLogoutTest" finished-at="2021-03-01T10:17:45 IST" duration-ms="28957" status="SKIP">
+        <test-method signature="LoginLogoutTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testcases.LoginPageTestOrange@2f8dad04]" started-at="2021-03-02T09:44:39 IST" name="LoginLogoutTest" finished-at="2021-03-02T09:44:53 IST" duration-ms="13243" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Admins]]>
+                <![CDATA[Admin]]>
               </value>
             </param>
             <param index="1">
@@ -149,152 +121,18 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for presence of element located by: By.id: welcome (tried for 20 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.id: welcome (tried for 20 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at com.org.dinesh.driverfactory.WaitFactory.explicitWait(WaitFactory.java:20)
-at com.qa.pages.BasePage.getText(BasePage.java:37)
-at com.qa.pages.HomePage_Orange.ValidateUserTitle(HomePage_Orange.java:25)
-at com.qa.testcases.LoginPageTestOrange.LoginLogoutTest(LoginPageTestOrange.java:29)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:214)
-at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:94)
-at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#welcome"}
-  (Session info: chrome=88.0.4324.190)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DINESH', ip: '192.168.8.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Dines\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63777}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c495d0f763f0eb2d1e88ccb3bb2bf922
-*** Element info: {Using=id, value=welcome}
-at jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 19 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginLogoutTest -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.testcases.LoginPageTestOrange@2f8dad04]" started-at="2021-03-01T10:17:19 IST" name="TearDown" finished-at="2021-03-01T10:17:24 IST" duration-ms="4560" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.testcases.LoginPageTestOrange@2f8dad04]" started-at="2021-03-02T09:44:49 IST" name="TearDown" finished-at="2021-03-02T09:44:50 IST" duration-ms="1549" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.testcases.LoginPageTestOrange@2f8dad04]" started-at="2021-03-01T10:17:45 IST" name="TearDown" finished-at="2021-03-01T10:17:46 IST" duration-ms="1601" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.testcases.LoginPageTestOrange@2f8dad04]" started-at="2021-03-02T09:44:53 IST" name="TearDown" finished-at="2021-03-02T09:44:54 IST" duration-ms="1033" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="setup_browser()[pri:0, instance:com.qa.testcases.LoginPageTestOrange@2f8dad04]" started-at="2021-03-01T10:17:46 IST" name="setup_browser" finished-at="2021-03-01T10:18:20 IST" duration-ms="34137" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup_browser -->
-        <test-method signature="LoginLogoutTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testcases.LoginPageTestOrange@2f8dad04]" started-at="2021-03-01T10:18:20 IST" name="LoginLogoutTest" finished-at="2021-03-01T10:18:44 IST" duration-ms="24000" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admins]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for presence of element located by: By.id: welcome (tried for 20 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.id: welcome (tried for 20 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at com.org.dinesh.driverfactory.WaitFactory.explicitWait(WaitFactory.java:20)
-at com.qa.pages.BasePage.getText(BasePage.java:37)
-at com.qa.pages.HomePage_Orange.ValidateUserTitle(HomePage_Orange.java:25)
-at com.qa.testcases.LoginPageTestOrange.LoginLogoutTest(LoginPageTestOrange.java:29)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:214)
-at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:94)
-at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#welcome"}
-  (Session info: chrome=88.0.4324.190)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DINESH', ip: '192.168.8.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Dines\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63843}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 21164e4c55c07dabd613a6d66dac9206
-*** Element info: {Using=id, value=welcome}
-at jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 19 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginLogoutTest -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.testcases.LoginPageTestOrange@2f8dad04]" started-at="2021-03-01T10:18:45 IST" name="TearDown" finished-at="2021-03-01T10:18:48 IST" duration-ms="3445" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.testcases.LoginPageTestOrange@2f8dad04]" started-at="2021-03-02T09:44:58 IST" name="TearDown" finished-at="2021-03-02T09:44:59 IST" duration-ms="832" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->

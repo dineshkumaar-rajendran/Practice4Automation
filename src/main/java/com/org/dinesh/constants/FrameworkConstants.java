@@ -11,10 +11,15 @@ public final class FrameworkConstants {
 
 	private static final String PathToRes = "./src/test/resources/";
 	private static final String ChromeDriverPath = PathToRes + "drivers/chromedriver.exe";
+	private static final String EdgeDriverPath = PathToRes + "drivers/msedgedriver.exe";
 	private static final String ConfigurationFilePath = PathToRes + "configuration/config.properties";
 	private static final int ExWaitTime = 20;
 	private static final String ExtentReportPath = System.getProperty("user.dir") + "/extent-test-output/";
 	public static String extentReportsFilePath = "";
+
+	public static String getEdgedriverpath() {
+		return EdgeDriverPath;
+	}
 
 	public static int getExwaittime() {
 		return ExWaitTime;

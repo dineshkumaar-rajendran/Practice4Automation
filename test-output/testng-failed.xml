@@ -11,7 +11,7 @@
         <methods>
           <include name="setup_browser"/>
           <include name="TearDown"/>
-          <include name="LoginLogoutTest" invocation-numbers="0 0 0"/>
+          <include name="LoginLogoutTest" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.qa.testcases.LoginPageTestOrange -->
     </classes>

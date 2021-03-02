@@ -6,7 +6,7 @@ import java.lang.reflect.Method;
 import org.testng.IAnnotationTransformer;
 import org.testng.annotations.ITestAnnotation;
 
-import com.qa.reports.RetryLogic;
+import com.org.dinesh.utility.RetryLogic;
 
 public class AnotationTransformer implements IAnnotationTransformer{
 
